@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang = "zh-CN">
+<head>
+    <meta charset="utf-8">
+    <link href="http://vjs.zencdn.net/7.3.0/video-js.min.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/7.3.0/video.min.js"></script>
+    <script src="https://unpkg.com/videojs-flash/dist/videojs-flash.js"></script>
+    <script src="scripts/my.js"></script>
+    <style>
+        .video-js .vjs-time-control {display: block;}
+        .video-js .vjs-remaining-time {display: none;}
+        .vjs-paused .vjs-big-play-button .vjs-paused .vjs-has-started .vjs-big-play-button {
+            display: block;
+        }
+    </style>
+</head>
+<body style="background-color:#336699">
+    <div>
+        <p id="demoText" style="text-align: center">DEVICE ID: xxx</p>
+    </div>
+    <div>
+        <video
+            id="my-player"
+            class="video-js vjs-big-play-centered"
+            controls
+            style="margin:auto"
+        >
+            <!-- <source src="rtmp://127.0.0.1/hls/test" type="rtmp/flv"></source> -->
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">
+                    supports HTML5 video
+                </a>
+            </p>
+        </video>
+    </div>
+    <script>load_by_vid();</script>
+</body>
+</html>
+<!-- data-setup='{"techorder" : ["flash"] }' preload="auto" -->
