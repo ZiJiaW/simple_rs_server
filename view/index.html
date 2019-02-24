@@ -35,7 +35,12 @@
             </p>
         </video>
     </div>
-    <script>load_by_vid();</script>
+    <script>
+        loadByVid();
+        window.onload = () => {
+            checkFlash();
+        }
+    </script>
 </body>
 </html>
 <!-- data-setup='{"techorder" : ["flash"] }' preload="auto" -->
